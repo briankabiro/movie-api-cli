@@ -10,8 +10,6 @@ def cli(show_name):
 	print("this is api + url",api_url+show_name)
 	data = data.text
 	data = json.loads(data)
-	#print(data)
-	print(data[0]['show'])
 
 	for i in data:
 		show = i['show']
